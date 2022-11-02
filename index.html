@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2_3</title>
+</head>
+
+<body>
+    <form id="reset">
+        <fieldset>
+            <legend>bitte einen Namen für die Liste eingeben</legend>
+            <input id="eingabeHTML" type="text">
+            <!-- zum feld leeren kann man in das input-tag, hinter type... einfügen onfocus="this.value=''". Dann leert sich das Feld immer wenn man reinclickt. -->
+        </fieldset>
+
+        <button onclick="hinzufuegen(event)" type="button">hinzufügen</button>
+        <button onclick="abziehen(event)" type="button">den letzten Namen wieder löschen</button>
+    </form>
+    <p>
+        Liste der bisher eingetragenen Personen:
+    </p>
+    <ul id="ausgabe">
+    </ul>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
